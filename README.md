@@ -21,14 +21,14 @@
 # Code:
   Here is my completed function:
   
-  vector<int> majorityElement(vector<int>& nums) {
-        map <int,int> countApearance;
-        vector <int> result;
-        for(int i=0;i<nums.size();++i)
-            countApearance[nums[i]]++;
-        map <int,int>::iterator it;
-        for(it = countApearance.begin();it != countApearance.end();++it)
-            if(it->second > nums.size()/3)
-                result.push_back(it->first);
-        return result;
-    }
+    vector<int> majorityElement(vector<int>& nums) {
+          map <int,int> countApearance;
+          vector <int> result;
+          for(int i=0;i<nums.size();++i)
+              countApearance[nums[i]]++;
+          map <int,int>::iterator it;
+          for(it = countApearance.begin();it != countApearance.end();++it)
+              if(it->second > nums.size()/3)
+                  result.push_back(it->first);
+          return result;
+      }
